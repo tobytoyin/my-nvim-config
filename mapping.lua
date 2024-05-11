@@ -3,14 +3,8 @@
 vim.g.mapleader = " "
 vim.g.maplocalleader = " "
 
+-- quick commands
+vim.keymap.set("n", "<leader>ex", ":Explore<cr>", {noremap = true})
+vim.keymap.set("n", "<leader>vs", ":vsplit<cr>", {noremap = true})
+vim.keymap.set("n", "<leader>to", ":vsplit | terminal<cr>", {noremap = true})
 
-
--- [[
--- Telescope Keymapping
--- ]]
-
-local builtin = require("telescope.builtin")
-
--- Navigation mode
-vim.keymap.set("n", "<leader>ff", builtin.find_files, {})
-vim.keymap.set('n', '<leader>fg', builtin.live_grep, {})
