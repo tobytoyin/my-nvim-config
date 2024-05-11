@@ -30,6 +30,50 @@ return require('packer').startup(function(use)
 		requires = { {'nvim-lua/plenary.nvim'} }
 	}
 
+	-- automation & diagnosis
+	use 'tpope/vim-sleuth'
+
+	use {
+	  "folke/which-key.nvim",
+	  config = function()
+		vim.o.timeout = true
+		vim.o.timeoutlen = 300
+		require("which-key").setup {
+		  -- your configuration comes here
+		  -- or leave it empty to use the default settings
+		  -- refer to the configuration section below
+		}
+	  end
+	}
+
+	use {
+		"windwp/nvim-autopairs",
+		event = "InsertEnter",
+		config = function()
+			require("nvim-autopairs").setup {}
+		end
+	}
+
+	-- theme, look and feels
+	use 'navarasu/onedark.nvim'
+
+	use {
+		'nvim-lualine/lualine.nvim',
+		requires = { 'nvim-tree/nvim-web-devicons', opt = true }
+	}
+
+	use "lukas-reineke/indent-blankline.nvim"
+
+	use {
+    "kylechui/nvim-surround",
+    tag = "*", -- Use for stability; omit to use `main` branch for the latest features
+    config = function()
+        require("nvim-surround").setup({
+        })
+    end
+	}
+
+
 
 
 
