@@ -5,4 +5,3 @@ require("plugins")
 
 require("vim-conf")
 require("onedark").load()
-

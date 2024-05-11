@@ -5,8 +5,8 @@ vim.g.maplocalleader = " "
 
 
 
--- [[ 
--- Telescope Keymapping 
+-- [[
+-- Telescope Keymapping
 -- ]]
 
 local builtin = require("telescope.builtin")

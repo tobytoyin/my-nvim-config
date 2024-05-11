@@ -1,4 +1,4 @@
--- below contains all the vim settings, 
+-- below contains all the vim settings,
 -- these can be override per project levels
 --
 
