@@ -69,14 +69,7 @@ return require('packer').startup(function(use)
   use "nvim-treesitter/playground"
   use "theprimeagen/harpoon"
   use "mbbill/undotree"
-  use {
-    "kylechui/nvim-surround",
-    tag = "*", -- Use for stability; omit to use `main` branch for the latest features
-    config = function()
-      require("nvim-surround").setup({
-      })
-    end
-  }
+  use "tpope/vim-surround"
 
 
 
