@@ -80,7 +80,12 @@ use "tpope/vim-fugitive"
   use "mbbill/undotree"
   use "tpope/vim-surround"
 
-
+  use {
+    'numToStr/Comment.nvim',
+    config = function()
+      require('Comment').setup()
+    end
+  }
 
 
 
