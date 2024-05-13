@@ -6,3 +6,4 @@ vim.keymap.set("n", "<leader>gw", vim.cmd.Gwrite) -- stage cuurent file
 -- reset current file to main
 -- reset current file to one commit backward
 -- unstage the cuurent file
+--
