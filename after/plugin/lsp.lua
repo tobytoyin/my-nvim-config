@@ -10,7 +10,7 @@ end)
 -- lsp setup
 local lspconfig = require("lspconfig")
 lspconfig.lua_ls.setup { }
-
+lspconfig.gopls.setup{}
 
 
 -- here we setup autocompletion
