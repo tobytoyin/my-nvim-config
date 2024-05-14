@@ -14,8 +14,3 @@ vim.keymap.set("n", "<leader>pp", '"*p')  -- clipboard paste
 -- remapping
 vim.keymap.set("n", "<C-d>", "<C-d>zz")
 vim.keymap.set("n", "<C-u>", "<C-u>zz")
--- change w to W because it's more often to jump words by whitespace
-vim.keymap.set("n", "w", "W")
-vim.keymap.set("n", "W", "w")
-vim.keymap.set("n", "B", "b")
-vim.keymap.set("n", "b", "B")
