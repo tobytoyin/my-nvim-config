@@ -32,6 +32,7 @@ return require('packer').startup(function(use)
   }
 
  -- lsp
+ use "lspcontainers/lspcontainers.nvim"
  use {
   'VonHeikemen/lsp-zero.nvim',
   branch = 'v3.x',
