@@ -11,6 +11,10 @@ vim.keymap.set('n', '<leader>fdg', function ()
 	local dir_glob = vim.fn.input("Dir Glob: ")
 	vim.cmd(string.format("Telescope live_grep search_dirs=%s", dir_glob))
 end)
+vim.keymap.set('n', '<leader>fdf', function ()
+	local dir_glob = vim.fn.input("Dir Glob: ")
+	vim.cmd(string.format("Telescope find_files search_dirs=%s", dir_glob))
+end)
 vim.keymap.set("n", "<leader>fs", function()
 	builtin.grep_string({search = vim.fn.input("Search: ")});
 

@@ -31,6 +31,7 @@ return require('packer').startup(function(use)
     requires = { { 'nvim-lua/plenary.nvim' } },
   }
 
+<<<<<<< HEAD
   -- lsp
   use {
     'VonHeikemen/lsp-zero.nvim',
@@ -40,6 +41,17 @@ return require('packer').startup(function(use)
       {'williamboman/mason.nvim'},
       {'williamboman/mason-lspconfig.nvim'},
       {'neovim/nvim-lspconfig'},
+=======
+ -- lsp
+ use "lspcontainers/lspcontainers.nvim"
+ use {
+  'VonHeikemen/lsp-zero.nvim',
+  branch = 'v3.x',
+  requires = {
+    --- Uncomment the two plugins below if you want to manage the language servers from neovim
+    -- {'williamboman/mason.nvim'},
+    -- {'williamboman/mason-lspconfig.nvim'},
+>>>>>>> 887fc900912d2ed112c670f235771d20bc967591
 
       {'hrsh7th/nvim-cmp'},
       {'hrsh7th/cmp-nvim-lsp'},
