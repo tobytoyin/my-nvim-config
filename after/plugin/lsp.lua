@@ -7,11 +7,15 @@ lsp.on_attach(function(client, bufnr)
   lsp.default_keymaps({buffer = bufnr})
 end)
 
--- lsp setup
-local lspconfig = require("lspconfig")
-lspconfig.lua_ls.setup { }
-lspconfig.gopls.setup{}
-
+require('mason').setup({})
+require('mason-lspconfig').setup({
+  ensure_installed = {'lua_ls', 'gopls'},
+  handlers = {
+    function(server_name)
+      require('lspconfig')[server_name].setup({})
+    end,
+  },
+})
 
 -- here we setup autocompletion
 local cmp = require('cmp')
