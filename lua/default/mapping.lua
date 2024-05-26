@@ -14,3 +14,5 @@ vim.keymap.set("n", "<leader>pp", '"*p')  -- clipboard paste
 -- remapping
 vim.keymap.set("n", "<C-d>", "<C-d>zz")
 vim.keymap.set("n", "<C-u>", "<C-u>zz")
+
+-- windows movement
