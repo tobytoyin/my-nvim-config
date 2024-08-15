@@ -3,6 +3,10 @@
 brew install ripgrep
 ```
 
+## Setup
+
+`git clone <url> .`
+
 ## Plugins
 
 Plugins are added using `packer`, below are the plugins that are being installed: 
